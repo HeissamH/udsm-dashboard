@@ -171,6 +171,13 @@ export async function getTopPapers(
 
     const whereClause = conditions.length > 0 ? and(...conditions) : undefined;
 
+    const sortMapping = {
+        views: 'view',
+        downloads: 'download',
+        citations: 'citation'
+    };
+    const sortEvent = sortMapping[sortBy];
+
     const topPapers = await db
         .select({
             paperId: analyticsEvents.paperId,
@@ -182,7 +189,7 @@ export async function getTopPapers(
         .from(analyticsEvents)
         .where(whereClause)
         .groupBy(analyticsEvents.paperId)
-        .orderBy(desc(sql`count(*) filter (where ${analyticsEvents.eventType} = '${sortBy}')`))
+        .orderBy(desc(sql`count(*) filter (where ${analyticsEvents.eventType} = ${sortEvent})`))
         .limit(limit);
 
     // Fetch paper details

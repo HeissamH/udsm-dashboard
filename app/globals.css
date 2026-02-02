@@ -1,15 +1,21 @@
 @import "tailwindcss";
 
 :root {
-  /* UDSM Brand Colors */
-  --udsm-yellow: #FFD900;
-  --udsm-navy: #334E68;
-  --udsm-navy-dark: #243B53;
-  
+  /* UDSM Brand Colors - Updated from Digital Commons Reference */
+  --udsm-yellow: #FCD116;
+  /* UDSM Gold - slightly warmer */
+  --udsm-blue-primary: #005090;
+  /* Vibrant Royal/Cobalt Blue */
+  --udsm-blue-secondary: #0073C6;
+  /* Lighter Navigation Blue */
+  --udsm-navy: #003366;
+  /* Deep Navy for text/footers */
+  --udsm-navy-dark: #002244;
+
   /* Background and Foreground */
   --background: #ffffff;
   --foreground: #111827;
-  
+
   /* Semantic Colors */
   --success: #10B981;
   --error: #EF4444;
@@ -18,8 +24,9 @@
 }
 
 @theme inline {
-  --color-primary: var(--udsm-yellow);
-  --color-secondary: var(--udsm-navy);
+  --color-primary: var(--udsm-blue-primary);
+  --color-secondary: var(--udsm-yellow);
+  --color-accent: var(--udsm-blue-secondary);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-inter);

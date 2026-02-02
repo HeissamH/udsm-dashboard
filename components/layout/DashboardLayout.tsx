@@ -51,19 +51,26 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
                 <motion.aside
                     initial={{ x: -280 }}
                     animate={{ x: sidebarOpen ? 0 : -280 }}
-                    className="fixed inset-y-0 left-0 z-50 w-64 bg-white border-r border-slate-200 lg:translate-x-0 lg:static lg:z-0"
+                    className="fixed inset-y-0 left-0 z-50 w-64 bg-primary border-r border-blue-800 lg:translate-x-0 lg:static lg:z-0 shadow-xl"
                 >
                     {/* Logo */}
-                    <div className="flex items-center justify-between h-16 px-6 border-b border-slate-200">
-                        <Link href="/dashboard" className="flex items-center space-x-3">
-                            <div className="w-8 h-8 bg-[#FFD900] rounded-lg flex items-center justify-center">
-                                <span className="text-[#334E68] font-bold text-lg">U</span>
+                    <div className="flex items-center space-x-3 h-20 px-6 border-b border-blue-800/50 bg-black/10">
+                        <Link href="/dashboard" className="flex items-center space-x-3 w-full">
+                            <div className="relative w-10 h-10 flex-shrink-0 bg-white p-0.5 rounded-lg shadow-sm">
+                                <img
+                                    src="https://upload.wikimedia.org/wikipedia/en/thumb/8/87/University_of_Dar_es_Salaam_Logo.png/220px-University_of_Dar_es_Salaam_Logo.png"
+                                    alt="UDSM Logo"
+                                    className="w-full h-full object-contain"
+                                />
                             </div>
-                            <span className="font-bold text-[#334E68]">UDSM Analytics</span>
+                            <div className="flex flex-col">
+                                <span className="font-bold text-white text-lg leading-tight">UDSM</span>
+                                <span className="text-[10px] text-blue-200 uppercase tracking-wider font-medium">Digital Commons</span>
+                            </div>
                         </Link>
                         <button
                             onClick={() => setSidebarOpen(false)}
-                            className="lg:hidden text-slate-600 hover:text-slate-900"
+                            className="lg:hidden text-blue-200 hover:text-white"
                         >
                             <X className="w-5 h-5" />
                         </button>
@@ -79,14 +86,14 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
                                     href={item.href}
                                     onClick={() => setSidebarOpen(false)}
                                     className={`
-                    flex items-center space-x-3 px-4 py-3 rounded-lg transition-all
+                    flex items-center space-x-3 px-4 py-3 rounded-lg transition-all duration-200 font-medium
                     ${isActive
-                                            ? 'bg-[#FFD900] text-[#334E68] font-semibold'
-                                            : 'text-slate-600 hover:bg-slate-100 hover:text-slate-900'
+                                            ? 'bg-secondary text-primary shadow-md transform scale-[1.02]'
+                                            : 'text-blue-100 hover:bg-white/10 hover:text-white'
                                         }
                   `}
                                 >
-                                    <item.icon className="w-5 h-5" />
+                                    <item.icon className={`w-5 h-5 ${isActive ? 'text-primary' : 'text-blue-300'}`} />
                                     <span>{item.name}</span>
                                 </Link>
                             );
@@ -94,19 +101,19 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
                     </nav>
 
                     {/* User section */}
-                    <div className="border-t border-slate-200 p-4">
-                        <div className="flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-slate-100 cursor-pointer">
-                            <div className="w-8 h-8 bg-slate-200 rounded-full flex items-center justify-center">
-                                <User className="w-4 h-4 text-slate-600" />
+                    <div className="border-t border-blue-800/50 p-4 bg-black/10">
+                        <div className="flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-white/5 cursor-pointer transition-colors group">
+                            <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center border border-white/20 group-hover:border-secondary/50 transition-colors">
+                                <User className="w-5 h-5 text-blue-100 group-hover:text-secondary" />
                             </div>
                             <div className="flex-1 min-w-0">
-                                <p className="text-sm font-medium text-slate-900 truncate">Admin User</p>
-                                <p className="text-xs text-slate-500 truncate">admin@udsm.ac.tz</p>
+                                <p className="text-sm font-semibold text-white truncate">Admin User</p>
+                                <p className="text-xs text-blue-300 truncate group-hover:text-blue-200">admin@udsm.ac.tz</p>
                             </div>
                         </div>
-                        <button className="w-full mt-2 flex items-center space-x-3 px-4 py-3 rounded-lg text-slate-600 hover:bg-red-50 hover:text-red-600 transition-colors">
-                            <LogOut className="w-5 h-5" />
-                            <span>Logout</span>
+                        <button className="w-full mt-2 flex items-center space-x-3 px-4 py-3 rounded-lg text-blue-300 hover:bg-red-500/10 hover:text-red-400 transition-colors text-sm">
+                            <LogOut className="w-4 h-4" />
+                            <span>Sign Out</span>
                         </button>
                     </div>
                 </motion.aside>
