@@ -1,0 +1,68 @@
+{
+    "nav": {
+        "home": "Nyumbani",
+        "papers": "Makala za Utafiti",
+        "dashboard": "Dashibodi",
+        "login": "Ingia",
+        "logout": "Toka",
+        "admin": "Paneli ya Msimamizi"
+    },
+    "dashboard": {
+        "title": "Dashibodi ya Athari za Kimataifa",
+        "subtitle": "Takwimu za wakati halisi za mwonekano wa utafiti wa UDSM",
+        "totalViews": "Jumla ya Matazamo",
+        "totalDownloads": "Jumla ya Upakuaji",
+        "totalCitations": "Jumla ya Nukuu",
+        "uniqueCountries": "Nchi Zilizofikwa",
+        "worldMap": "Ramani ya Wasomaji Duniani",
+        "trends": "Mwenendo kwa Wakati",
+        "topPapers": "Makala Bora Zaidi",
+        "geographicDistribution": "Usambazaji wa Kijiografia"
+    },
+    "papers": {
+        "title": "Makala za Utafiti",
+        "subtitle": "Gundua machapisho ya kitaaluma ya UDSM",
+        "search": "Tafuta makala...",
+        "viewPaper": "Tazama Makala",
+        "downloadPdf": "Pakua PDF",
+        "abstract": "Muhtasari",
+        "authors": "Waandishi",
+        "keywords": "Maneno Muhimu",
+        "publicationDate": "Tarehe ya Uchapishaji",
+        "journal": "Jarida",
+        "doi": "DOI",
+        "category": "Jamii",
+        "noPapers": "Hakuna makala zilizopatikana",
+        "uploadPaper": "Pakia Makala"
+    },
+    "auth": {
+        "login": "Ingia",
+        "register": "Jisajili",
+        "email": "Barua Pepe",
+        "password": "Nywila",
+        "name": "Jina Kamili",
+        "loginButton": "Ingia",
+        "registerButton": "Fungua Akaunti",
+        "forgotPassword": "Umesahau nywila?",
+        "noAccount": "Huna akaunti?",
+        "hasAccount": "Tayari una akaunti?"
+    },
+    "common": {
+        "loading": "Inapakia...",
+        "error": "Hitilafu imetokea",
+        "success": "Imefanikiwa",
+        "cancel": "Ghairi",
+        "save": "Hifadhi",
+        "delete": "Futa",
+        "edit": "Hariri",
+        "view": "Tazama",
+        "download": "Pakua",
+        "upload": "Pakia",
+        "search": "Tafuta",
+        "filter": "Chuja",
+        "sort": "Panga",
+        "reset": "Rudisha",
+        "apply": "Tekeleza",
+        "close": "Funga"
+    }
+}

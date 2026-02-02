@@ -1,0 +1,68 @@
+{
+    "nav": {
+        "home": "Home",
+        "papers": "Research Papers",
+        "dashboard": "Dashboard",
+        "login": "Login",
+        "logout": "Logout",
+        "admin": "Admin Panel"
+    },
+    "dashboard": {
+        "title": "Global Impact Dashboard",
+        "subtitle": "Real-time analytics of UDSM research visibility",
+        "totalViews": "Total Views",
+        "totalDownloads": "Total Downloads",
+        "totalCitations": "Total Citations",
+        "uniqueCountries": "Countries Reached",
+        "worldMap": "Global Readership Map",
+        "trends": "Trends Over Time",
+        "topPapers": "Top Performing Papers",
+        "geographicDistribution": "Geographic Distribution"
+    },
+    "papers": {
+        "title": "Research Papers",
+        "subtitle": "Explore UDSM's academic publications",
+        "search": "Search papers...",
+        "viewPaper": "View Paper",
+        "downloadPdf": "Download PDF",
+        "abstract": "Abstract",
+        "authors": "Authors",
+        "keywords": "Keywords",
+        "publicationDate": "Publication Date",
+        "journal": "Journal",
+        "doi": "DOI",
+        "category": "Category",
+        "noPapers": "No papers found",
+        "uploadPaper": "Upload Paper"
+    },
+    "auth": {
+        "login": "Login",
+        "register": "Register",
+        "email": "Email",
+        "password": "Password",
+        "name": "Full Name",
+        "loginButton": "Sign In",
+        "registerButton": "Create Account",
+        "forgotPassword": "Forgot password?",
+        "noAccount": "Don't have an account?",
+        "hasAccount": "Already have an account?"
+    },
+    "common": {
+        "loading": "Loading...",
+        "error": "An error occurred",
+        "success": "Success",
+        "cancel": "Cancel",
+        "save": "Save",
+        "delete": "Delete",
+        "edit": "Edit",
+        "view": "View",
+        "download": "Download",
+        "upload": "Upload",
+        "search": "Search",
+        "filter": "Filter",
+        "sort": "Sort",
+        "reset": "Reset",
+        "apply": "Apply",
+        "close": "Close"
+    }
+}

@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+:root {
+  /* UDSM Brand Colors */
+  --udsm-yellow: #FFD900;
+  --udsm-navy: #334E68;
+  --udsm-navy-dark: #243B53;
+  
+  /* Background and Foreground */
+  --background: #ffffff;
+  --foreground: #111827;
+  
+  /* Semantic Colors */
+  --success: #10B981;
+  --error: #EF4444;
+  --warning: #F59E0B;
+  --info: #3B82F6;
+}
+
+@theme inline {
+  --color-primary: var(--udsm-yellow);
+  --color-secondary: var(--udsm-navy);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--udsm-navy);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--udsm-navy-dark);
+}
